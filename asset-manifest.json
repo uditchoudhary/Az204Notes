@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Az204Notes/static/css/main.91ef9c0d.css",
+    "main.css": "/Az204Notes/static/css/main.6158ded3.css",
     "main.js": "/Az204Notes/static/js/main.9dd4d193.js",
     "static/js/453.6d1e70d4.chunk.js": "/Az204Notes/static/js/453.6d1e70d4.chunk.js",
     "index.html": "/Az204Notes/index.html",
-    "main.91ef9c0d.css.map": "/Az204Notes/static/css/main.91ef9c0d.css.map",
+    "main.6158ded3.css.map": "/Az204Notes/static/css/main.6158ded3.css.map",
     "main.9dd4d193.js.map": "/Az204Notes/static/js/main.9dd4d193.js.map",
     "453.6d1e70d4.chunk.js.map": "/Az204Notes/static/js/453.6d1e70d4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91ef9c0d.css",
+    "static/css/main.6158ded3.css",
     "static/js/main.9dd4d193.js"
   ]
 }
