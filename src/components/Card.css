@@ -5,8 +5,7 @@
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    /* max-height: 300px; Adjust as needed */
-    overflow-y: auto;  /* Enables vertical scrolling */
+    overflow: visible; /* Ensures no scrolling */
   }
   
   .card h2 {
@@ -24,7 +23,6 @@
     .card {
       padding: 15px;
       margin: 8px;
-      /* max-height: 150px; Reduce height for mobile view */
     }
   
     .card h2 {
@@ -32,7 +30,7 @@
     }
   
     .card p {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   
