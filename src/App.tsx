@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import Card from './components/Card';
+import Menu from './components/Menu';
+import topics from './topicsData';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <button className="menu-toggle" onClick={toggleMenu}>
+        {menuVisible ? 'Hide Menu' : 'Show Menu'}
+      </button>
+      {menuVisible && <Menu topics={topics} />}
+      {topics.map((topic, index) => (
+        <Card
+          key={index}
+          title={topic.title}
+          description={topic.description}
+          id={topic.title.replace(/\s+/g, '-')}
+        />
+      ))}
     </div>
   );
-}
+};
 
 export default App;
