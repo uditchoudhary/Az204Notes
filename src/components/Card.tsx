@@ -9,9 +9,13 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, id }) => {
   return (
-    <div className="card" id={id}>
+    <div className="card" id={`card-${id}`}>
       <h2>{title}</h2>
-      <p>{description}</p>
+      <ul style={{ textAlign: 'left', paddingLeft: '20px' }}>
+        {description.split('\n').map((line, index) => (
+          <li key={index}>{line}</li>
+        ))}
+      </ul>
     </div>
   );
 };
