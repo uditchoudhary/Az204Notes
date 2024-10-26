@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Card from './components/Card';
 import Menu from './components/Menu';
 import topics from './topicsData';
@@ -18,13 +18,9 @@ const App: React.FC = () => {
       </button>
       {menuVisible && <Menu topics={topics} />}
       {topics.map((topic, index) => (
-        <Card
-          key={index}
-          title={topic.title}
-          description={topic.description}
-          id={topic.title.replace(/\s+/g, '-')}
-        />
+        <Card key={index} id={topic.title.replace(/\s+/g, '-')} title={topic.title} description={topic.description} />
       ))}
+
     </div>
   );
 };
